@@ -1,0 +1,168 @@
+:root {
+  --azulPrincipal: #161468;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+nav {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 60px;
+
+  background-color: var(--azulPrincipal);
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-links {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-link {
+  font-size: 1.1rem;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.menu-link::after {
+  content: "";
+  position: absolute;
+
+  width: 0;
+  height: 2px;
+
+  background: white;
+
+  left: 0;
+  bottom: -5px;
+
+  transition: 0.3s;
+}
+
+.menu-link:hover::after {
+  width: 100%;
+}
+
+/* FOOTER */
+
+#footer {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 60px;
+
+  background-color: var(--azulPrincipal);
+
+  color: white;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+/* PAGE CONTAINER */
+
+.page-container {
+  min-height: calc(100vh - 160px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 40px;
+
+  background: linear-gradient(135deg, #0a0a3f, #02021f);
+}
+
+/* HAMBURGER */
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(162, 177, 228);
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+ 
+
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu-links {
+    width: 100%;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 20px;
+  }
+
+  .menu-links.active {
+    display: flex;
+  }
+
+  #produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-text {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .empresa-box {
+    width: 90%;
+  }
+
+  .contacts-box {
+    width: 90%;
+  }
+}
