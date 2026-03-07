@@ -1,16 +1,39 @@
-# React + Vite
+# TechSolutions 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TechSolutions** é um site moderno de tecnologia, criado com **React**, **Vite** e **React Router**, que apresenta produtos, informações da empresa e contatos. Possui design responsivo, efeitos de vidro (glassmorphism) e cards com hover animado.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Funcionalidades
 
-## React Compiler
+- Página inicial com destaque para os serviços e produtos
+- Página **Produtos** com cards interativos e efeito neon
+- Página **Empresa** com informações institucionais
+- Página **Contatos** com ícones e efeito glassmorphism
+- Menu responsivo com ícone hambúrguer para dispositivos móveis
+- Deploy automático no **Vercel**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tecnologias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (v19.x)
+- **Vite** (build tool)
+- **React Router Dom** (v7.x)
+- **React Icons** (para ícones de contato e menu)
+- **CSS moderno** (flexbox, glassmorphism, hover effects)
+
+---
+
+## 💻 Rodando localmente
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/anaolr-aula/TechSolutions.git
+```
+
+---
+## Deploy
+
+O projeto está rodando em: https://tech-solutions-git-main-anaolr-aulas-projects.vercel.app/
