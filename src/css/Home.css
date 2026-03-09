@@ -59,6 +59,7 @@
   cursor: pointer;
 
   transition: 0.3s;
+  margin-bottom: 35px;
 
 }
 
@@ -70,4 +71,11 @@
   0 10px 25px rgba(0,0,0,0.4),
   0 0 20px #4f6bff;
 
+}
+
+.carrosel-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }

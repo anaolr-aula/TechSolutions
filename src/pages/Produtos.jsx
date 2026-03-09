@@ -1,24 +1,11 @@
-import '../css/Produtos.css'
+import { useState, useEffect } from "react"
+import "../css/Produtos.css"
+import produtosData from "../json/db.json"
 
 function Produtos(){
 
-    const produtos = [
-        {
-            nome: "Notebook UltraTech",
-            preco: "R$ 4.500,00",
-            imagem: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80"
-        },
-        {
-            nome: "Smartphone X200",
-            preco: "R$ 2.300,00",
-            imagem: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=300&q=80"
-        },
-        {
-            nome: "Monitor Gamer 270",
-            preco: "R$ 1.200,00",
-            imagem: "https://d22k5h68hofcrd.cloudfront.net/magefan_blog/hero-monitor-gaming-34.jpg"
-        }
-    ]
+    const [produtos, setProdutos] = useState(produtosData)
+
 
     return(
         <div className="page-container">
