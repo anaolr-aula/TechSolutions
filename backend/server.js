@@ -1,0 +1,44 @@
+const express = require("express");
+const mongoose = require("mongoose");
+const cors = require("cors");
+const Contact = require("./models/Contact");
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+// conexão com MongoDB
+mongoose
+  .connect(
+    "mongodb+srv://techsolutions:tech12345@cluster-tech.rmzpl37.mongodb.net/techsolutions",
+  )
+  .then(() => console.log("MongoDB conectado"))
+  .catch((err) => console.log(err));
+
+app.get("/", (req, res) => {
+  res.send("API TechSolutions funcionando");
+});
+
+app.post("/contact", async (req, res) => {
+  try {
+    const { name, email, message } = req.body
+
+    const newContact = new Contact({
+      name,
+      email,
+      message
+    })
+
+    await newContact.save()
+
+    res.status(201).json({ message: "Mensagem salva com sucesso!" })
+
+  } catch (error) {
+    res.status(500).json({ error: "Erro ao salvar mensagem" })
+  }
+})
+
+app.listen(5000, () => {
+  console.log("Servidor rodando na porta 5000");
+});

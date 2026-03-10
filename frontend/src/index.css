@@ -2,9 +2,14 @@
   --azulPrincipal: #161468;
 }
 
+html, body, #root {
+  min-height: 100%;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  background: #02021f;
 }
 
 * {
@@ -89,6 +94,7 @@ nav {
 
 .page-container {
   min-height: calc(100vh - 160px);
+  width: 100%;
 
   display: flex;
   align-items: center;
@@ -97,6 +103,10 @@ nav {
   padding: 40px;
 
   background: linear-gradient(135deg, #0a0a3f, #02021f);
+}
+
+.page-container {
+  box-sizing: border-box;
 }
 
 /* HAMBURGER */
@@ -122,6 +132,12 @@ a:hover {
 .logo a {
   color: white;
   text-decoration: none;
+}
+
+#cards {
+  display: flex;
+  gap: 50px;
+  max-width: 100%;
 }
 /* RESPONSIVO */
 
