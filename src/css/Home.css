@@ -11,7 +11,7 @@
 
 .home-text {
 
-  width: 600px;
+  width: 700px;
   padding: 60px;
 
   text-align: center;
@@ -31,7 +31,7 @@
 }
 
 .home-text h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
 }
 
@@ -78,4 +78,30 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .home-text {
+    width: 90%;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-text {
+    padding: 30px;
+  }
+
+  .home-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-text p {
+    font-size: 0.95rem;
+  }
+
+  .cta {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
 }

@@ -29,10 +29,10 @@
 } */
 
 #produtos {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Truque */
@@ -84,4 +84,27 @@ span {
 
 span {
   font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #produtos {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .tech-card {
+  width: 250px;}
+
+  .imagem {
+  height: 100px;
+  width: 100px;}
+
+  h2{
+    font-size: 1.2rem;
+  }
+
+  span{
+    font-size: 0.90rem;
+  }
 }

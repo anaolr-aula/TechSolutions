@@ -1,5 +1,4 @@
 .empresa-box {
-
   width: 700px;
 
   padding: 50px;
@@ -14,26 +13,42 @@
 
   border-radius: 20px;
 
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
 
   backdrop-filter: blur(10px);
 
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
-  box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
 
 .empresa-box h1 {
-
   font-size: 2.3rem;
-
 }
 
 .empresa-box p {
-
   font-size: 1.1rem;
 
   line-height: 1.6;
+}
 
+@media (max-width: 768px) {
+  .empresa-box {
+    width: 90%;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .empresa-box {
+    padding: 25px;
+  }
+
+  .empresa-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .empresa-box p {
+    font-size: 0.95rem;
+  }
 }
