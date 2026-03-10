@@ -9,11 +9,8 @@ app.use(cors());
 app.use(express.json());
 
 // conexão com MongoDB
-mongoose
-  .connect(
-    "mongodb+srv://techsolutions:tech12345@cluster-tech.rmzpl37.mongodb.net/techsolutions",
-  )
-  .then(() => console.log("MongoDB conectado"))
+
+  mongoose(process.env.MONGO_URI).then(() => console.log("MongoDB conectado"))
   .catch((err) => console.log(err));
 
 app.get("/", (req, res) => {

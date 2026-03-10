@@ -10,7 +10,7 @@ function Contacts() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:5000/contact", {
+    const response = await fetch("https://techsolutions-api.onrender.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
